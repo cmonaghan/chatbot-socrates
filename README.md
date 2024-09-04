@@ -9,4 +9,4 @@
     pip install -r requirements.txt
 
     # Run the chatbot
-    python start.py
+    python chatbot.py
