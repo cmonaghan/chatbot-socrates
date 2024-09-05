@@ -1,7 +1,8 @@
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
-# Load pre-trained model and tokenizer
-model_name = "gpt2"  # start with GPT-2 and later switch to GPT-3/4
+# Load fine-tuned model and tokenizer from saved directory
+model_name = "gpt2"
+# model_name = "./fine_tuned_model/"  # Path to your fine-tuned model
 model = GPT2LMHeadModel.from_pretrained(model_name)
 tokenizer = GPT2Tokenizer.from_pretrained(model_name)
 
